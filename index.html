@@ -13,41 +13,88 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+        
+        <script src="js/shuffle.min.js"></script>
     </head>
-    <body>
+    <body class="scroll-design">
         <!--[if lt IE 8]>
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
         <!-- Add your site or application content here -->
 
+   <div class="landing-page">       
+       <div class="navigation">
+           <div class="right-nav-container nav-container">
+               <ul>
+                   <li><a href="#">Me</a></li>
+                   <li><a href="#">Resume</a></li>
+                   <li><a href="#">Hire Me!</a></li>            </ul>
+           </div>
+       </div>
+       
+            
+      
+        
+       
+<!--
+       
+       <div class="filter-options">           
+           <a class="btn active" data-group="professional" href="#">Professional</a>
+           <a class="btn" data-group="events" href="#">Events</a>
+           <a class="btn" data-group="curricular" href="#">curricular</a>
+       </div>
+        
+-->
+    
+             
+       
+    </div>
+    
+       
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   
     <div class="navigation">
         <div class="left-nav-container nav-container">
-            <ul>
-                <li><a href="#">All</a></li>
-                <li><a href="#">Professional</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Achievements</a></li>
-                <li><a href="#">Co-Curricular</a></li>
-                <li><a href="#">Projects</a></li>            </ul>
+            <ul class="filter-options">
+                <a data-group="all"  href="#">All</a>
+                <a  class="btn" data-group="professional" href="#">Professional</a>
+                <a data-group="events" href="#">Events</a>
+                <a data-group="achievements" href="#">Achievements</a>
+                <a data-group="curricular" href="#">Co-Curricular</a>
+                <a data-group="projects" href="#">Projects</a> 
+            </ul>
         </div>
+        
+        
+        
+        
+<!--
         <div class="right-nav-container nav-container">
             <ul>
                 <li><a href="#">Me</a></li>
                 <li><a href="#">Resume</a></li>
                 <li><a href="#">Hire Me!</a></li>            </ul>
         </div>
+-->
     </div>
 
 <div class="container">
 
 
-    <div class="timeline scroll-design">
+    <div class="timeline scroll-design" id="grid">
 
+<div class="sizer-element"></div>
 
-
-
-        <div class="timeline-block" data-id="29">
+        <div class="timeline-block" data-groups='["professional"]'  data-id="29">
             <div class="date">
                 <p><span class="month ">April</span><br>2016</p>
             </div>
@@ -59,7 +106,7 @@
 
 
 
-        <div class="timeline-block" data-id="28">
+        <div class="timeline-block block-margin" data-groups='["professional" , "events"]' data-id="28">
             <div class="date zero-opacity">
                 <p><span class="month ">March</span><br>2016</p>
             </div>
@@ -72,7 +119,7 @@
 
 
 
-        <div class="timeline-block" data-id="29">
+        <div class="timeline-block" data-groups='["curricular"]' data-id="29">
             <div class="date">
                 <p><span class="month ">March</span><br>2016</p>
             </div>
@@ -83,7 +130,9 @@
         </div>
 
 
-        <div class="timeline-block" data-id="29">
+
+
+        <div class="timeline-block block-margin" data-groups='["projects"]' data-id="29">
             <div class="date zero-opacity">
                 <p><span class="month ">February</span><br>2016</p>
             </div>
@@ -93,7 +142,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="30">
+        <div class="timeline-block" data-groups='["projects"]' data-id="30">
             <div class="date">
                 <p><span class="month ">February</span><br>2016</p>
             </div>
@@ -103,7 +152,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="28">
+        <div class="timeline-block block-margin" data-groups='["events","projects"]' data-id="28">
             <div class="date">
                 <p><span class="month ">November</span><br>2015</p>
             </div>
@@ -114,7 +163,7 @@
         </div>
 
 
-        <div class="timeline-block" data-id="31">
+        <div class="timeline-block block-margin" data-groups='["projects","events"]' data-id="31">
             <div class="date">
                 <p><span class="month ">October</span><br>2015</p>
             </div>
@@ -124,7 +173,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="27">
+        <div class="timeline-block block-margin" data-groups='["events"]' data-id="27">
             <div class="date">
                 <p><span class="month ">September</span><br>2015</p>
             </div>
@@ -134,7 +183,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="26">
+        <div class="timeline-block block-margin" data-groups='["projects"]' data-id="26">
             <div class="date">
                 <p><span class="month ">August</span><br>2015</p>
             </div>
@@ -144,7 +193,27 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="33">
+        <div class="timeline-block block-margin" data-groups='["curricular"]' data-id="29">
+            <div class="date zero-opacity">
+                <p><span class="month">July</span><br>2015</p>
+            </div>
+            <div class="timeline-detail">
+                <h1>Rope Walk over a valley</h1>
+                <p>Had an adrenaline rush walking on a rope over a valley for the first time</p>
+            </div>
+        </div>
+      
+        <div class="timeline-block" data-groups='["projects","professional"]' data-id="29">
+            <div class="date">
+                <p><span class="month ">July</span><br>2015</p>
+            </div>
+            <div class="timeline-detail">
+                <h1>Cuponation</h1>
+                <p>Developed a web page for a monsoon campaign</p>
+            </div>
+        </div>
+
+        <div class="timeline-block block-margin" data-groups='["projects"]' data-id="33">
             <div class="date zero-opacity">
                 <p><span class="month ">June</span><br>2015</p>
             </div>
@@ -154,7 +223,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="25">
+        <div class="timeline-block" data-id="25" data-groups='["projects","achievements","events"]'>
             <div class="date zero-opacity">
                 <p><span class="month ">June</span><br>2015</p>
             </div>
@@ -163,8 +232,8 @@
                 <p>Developed an AI based depression finder reading user's tweets. Stood 8th among 1500 teams</p>
             </div>
         </div>
-
-        <div class="timeline-block" data-id="24">
+       
+        <div class="timeline-block" data-id="24" data-groups='["projects","achievements","events"]'>
             <div class="date zero-opacity">
                 <p><span class="month ">June</span><br>2015</p>
             </div>
@@ -177,27 +246,8 @@
 
 
 
-        <div class="timeline-block" data-id="29">
-            <div class="date zero-opacity">
-                <p><span class="month">July</span><br>2015</p>
-            </div>
-            <div class="timeline-detail">
-                <h1>Rope Walk over a valley</h1>
-                <p>Had an adrenaline rush walking on a rope over a valley for the first time</p>
-            </div>
-        </div>
 
-        <div class="timeline-block" data-id="29">
-            <div class="date">
-                <p><span class="month ">July</span><br>2015</p>
-            </div>
-            <div class="timeline-detail">
-                <h1>Cuponation</h1>
-                <p>Developed a web page for a monsoon campaign</p>
-            </div>
-        </div>
-
-        <div class="timeline-block" data-id="23">
+        <div class="timeline-block" data-id="23" data-groups='["projects","achievements","events"]'>
             <div class="date">
                 <p><span class="month ">June</span><br>2015</p>
             </div>
@@ -206,8 +256,8 @@
                 <p>Developed an Aadhaar based e-wallet authenticated by the user's aadhaar/uidai number. Listed in top 10 teams among 2500 in a nationwide hackathon conducted by Govt. of India</p>
             </div>
         </div>
-
-        <div class="timeline-block" data-id="22">
+        
+        <div class="timeline-block block-margin" data-id="22" data-groups='["events"]'>
             <div class="date">
                 <p><span class="month ">May</span><br>2015</p>
             </div>
@@ -217,7 +267,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="21">
+        <div class="timeline-block block-margin" data-groups='["professional","achievements"]' data-id="21">
             <div class="date">
                 <p><span class="month ">April</span><br>2015</p>
             </div>
@@ -228,7 +278,7 @@
         </div>
 
 
-        <div class="timeline-block" data-id="32">
+        <div class="timeline-block block-margin" data-groups='["projects"]' data-id="32">
             <div class="date zero-opacity">
                 <p><span class="month ">March</span><br>2015</p>
             </div>
@@ -237,8 +287,8 @@
                 <p>Developed a website to promote STEM Education among kids in India and United States</p>
             </div>
         </div>
-
-        <div class="timeline-block" data-id="20">
+        
+        <div class="timeline-block" data-groups='["events","projects"]' data-id="20">
             <div class="date">
                 <p><span class="month ">March</span><br>2015</p>
             </div>
@@ -249,7 +299,7 @@
         </div>
 
 
-        <div class="timeline-block" data-id="30">
+        <div class="timeline-block block-margin" data-groups='["projects","professional"]' data-id="30">
             <div class="date zero-opacity">
                 <p><span class="month  ">January</span><br>2015</p>
             </div>
@@ -259,7 +309,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="19">
+        <div class="timeline-block "  data-groups='["projects","professional"]' data-id="19">
             <div class="date">
                 <p><span class="month ">January</span><br>2015</p>
             </div>
@@ -269,7 +319,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="18">
+        <div class="timeline-block block-margin"  data-groups='["projects","professional"]' data-id="18">
             <div class="date">
                 <p><span class="month ">July</span><br>2014</p>
             </div>
@@ -279,7 +329,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="17">
+        <div class="timeline-block block-margin"  data-groups='["projects","professional"]' data-id="17">
             <div class="date zero-opacity">
                 <p><span class="month ">June</span><br>2014</p>
             </div>
@@ -288,8 +338,8 @@
                 <p>Joined as a graphic designer / online media marketing intern</p>
             </div>
         </div>
-
-        <div class="timeline-block" data-id="16">
+      
+        <div class="timeline-block"  data-groups='["projects","professional"]' data-id="16">
             <div class="date">
                 <p><span class="month ">June</span><br>2014</p>
             </div>
@@ -302,7 +352,7 @@
 
 
 
-        <div class="timeline-block" data-id="29">
+        <div class="timeline-block block-margin"  data-groups='["curricular"]' data-id="29">
             <div class="date zero-opacity">
                 <p><span class="month ">April</span><br>2014</p>
             </div>
@@ -312,7 +362,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="15">
+        <div class="timeline-block"  data-groups='["achievements"]' data-id="15">
             <div class="date zero-opacity">
                 <p><span class="month ">April</span><br>2014</p>
             </div>
@@ -322,7 +372,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="14">
+        <div class="timeline-block"  data-groups='["projects","events"]' data-id="14">
             <div class="date">
                 <p><span class="month">April</span><br>2014</p>
             </div>
@@ -332,7 +382,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="14">
+        <div class="timeline-block block-margin"  data-groups='["projects","professional"]' data-id="14">
             <div class="date">
                 <p><span class="month">March</span><br>2014</p>
             </div>
@@ -341,8 +391,8 @@
                 <p>Joined the delhi based company (focusing on SME / Startup growth) as a web developer / graphic artist / photographer / IT expert</p>
             </div>
         </div>
-
-        <div class="timeline-block" data-id="13">
+    
+        <div class="timeline-block block-margin"  data-groups='["projects","professional"]' data-id="13">
             <div class="date">
                 <p><span class="month">February</span><br>2014</p>
             </div>
@@ -352,7 +402,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="12">
+        <div class="timeline-block block-margin"  data-groups='["achievements"]' data-id="12">
             <div class="date zero-opacity ">
                 <p><span class="month">January</span><br>2014</p>
             </div>
@@ -362,7 +412,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="11">
+        <div class="timeline-block" data-groups='["achievements"]' data-id="11">
             <div class="date zero-opacity ">
                 <p><span class="month">January</span><br>2014</p>
             </div>
@@ -372,7 +422,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="10">
+        <div class="timeline-block" data-groups='["projects","professional"]' data-id="10">
             <div class="date ">
                 <p><span class="month">January</span><br>2014</p>
             </div>
@@ -382,7 +432,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="9">
+        <div class="timeline-block block-margin" data-groups='["projects"]' data-id="9">
             <div class="date zero-opacity">
                 <p><span class="month">November</span><br>2013</p>
             </div>
@@ -391,8 +441,8 @@
                 <p>A short clip using VFX technologies, 3d and graphic design</p>
             </div>
         </div>
-
-        <div class="timeline-block" data-id="8">
+       
+        <div class="timeline-block" data-groups='["projects"]' data-id="8">
             <div class="date">
                 <p><span class="month">November</span><br>2013</p>
             </div>
@@ -402,7 +452,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="7">
+        <div class="timeline-block block-margin" data-groups='["events"]' data-id="7">
             <div class="date">
                 <p><span class="month">September</span><br>2013</p>
             </div>
@@ -413,7 +463,7 @@
         </div>
 
 
-        <div class="timeline-block" data-id="6">
+        <div class="timeline-block block-margin" data-groups='["events","projects"]' data-id="6">
             <div class="date">
                 <p><span class="month">April</span><br>2013</p>
             </div>
@@ -424,7 +474,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="5">
+        <div class="timeline-block block-margin" data-groups='["curricular"]' data-id="5">
             <div class="date">
                 <p><span class="month">March</span><br>2013</p>
             </div>
@@ -434,7 +484,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="4">
+        <div class="timeline-block block-margin" data-groups='["achievements"]' data-id="4">
             <div class="date">
                 <p><span class="month">January</span><br>2013</p>
             </div>
@@ -443,9 +493,9 @@
                 <h1>Nibble Computer Society</h1>
                 <p>Got recruited in the official Computer Society of our college</p>
             </div>
-        </div>
+        </div> 
 
-        <div class="timeline-block" data-id="3">
+        <div class="timeline-block block-margin" data-groups='["achievements"]' data-id="3">
             <div class="date">
                 <p><span class="month">August</span><br>2012</p>
             </div>
@@ -455,7 +505,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="2">
+        <div class="timeline-block block-margin" data-groups='["achievements","events"]' data-id="2">
             <div class="date">
                 <p><span class="month">August</span><br>2008</p>
             </div>
@@ -465,7 +515,7 @@
             </div>
         </div>
 
-        <div class="timeline-block" data-id="1">
+        <div class="timeline-block block-margin"  data-groups='["achievements"]' data-id="1">
             <div class="date">
                 <p><span class="month">August</span><br>1994</p>
             </div>
@@ -474,25 +524,209 @@
                 <p>Blessed with the most loving parents who support me in every phase of my life.</p>
             </div>
         </div>
+        
+        
+      
+        
+        
+          
+        
+        
 
     </div>
 
         <div class="content js-details" id="content-details">
-        <div data-id="29" style="display:none;">
-         <h1>National Level Badminton Championship</h1>
-         <img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=350%C3%97150&w=50&h=50" data-src="img/zealicon-2013.jpg" />
-        <p>Qualified for the National Level (Indore) after securing second position in the East Zone Badminton Championship held at Meerut.</p>
-        </div>
+        
+        <div data-id="29" >
+         <h1>Zealicon 2016</h1>
+         <h2>Festival Secretary</h2>
+            <div class="image-block">
+                <div style="padding-top: 8%; ">
+                    <img src="img/content/zealicon16-2.jpg" />
 
-        <div data-id="28" style="display:none;">
-         <h1>National LALLALALALLALAL CHampion</h1>
-         <img src="https://placeholdit.imgix.net/~text?txtsize=10&txt=350%C3%97150&w=50&h=50" data-src="img/ncs.jpg" />
-        <p>Qualified for the National Level (Indore) after securing second position in the East Zone Badminton Championship held at Meerut.</p>
+                </div>
+                <div >
+                    <img src="img/content/zealicon16-1.jpg">
+                </div>
+                <div style="padding-top: 15%;">
+                    <img src="img/content/zealicon16-3.jpg">
+                </div>
+                
+            </div>
+        
+            <p>Zealicon is the Annual Techno-Cultural festival of JSS Academy of Technical Education, Noida. I got an opportunity to be the festival secretary for the same. It included a large set of responsibilities both from the technical and management end.</p>
+            <hr class="hr-center">
+         
+            <p>I was also the <strong>team lead</strong> of the official website <a href="http://www.zealicon.in" target="_blank">zealicon.in</a>
+        </p>
+        <div class="image-block">
+            <div style="padding:2% 6%;">
+                <img src="img/content/zealicon16-4.jpg">
+            </div>
         </div>
+            <hr class="hr-center">
+
+        <p>Being a designer in NCS for a span of 4 years I was also responsible for leading the team in all the creatives. Also designed a few ..</p>
+        <div class="image-block" style="">
+            <div>
+                <img src="img/content/zealicon16-5.jpg">
+                <p class="centered">Poster reflecting the spirit of womanhood</p>
+            </div>
+            <div>
+                <img src="img/content/zealicon16-6.jpg">
+                <p class="centered">Sponsorship letter</p>
+            </div>
+        </div>
+        <div class="image-block" style="">
+            <div style="margin-top: -8%">
+                <img src="img/content/zealicon16-7.jpg">
+                <p class="centered">The logo reflects the theme of the fest - Comic Con</p>
+            </div>
+            <div>
+                <img src="img/content/zealicon16-8.jpg">
+                <p class="centered">The I-cards </p>
+            </div>
+        </div>
+        </div>
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+            <div data-id="28" >
+                <h1>MIT Global Startup Workshop</h1>
+                <h2>Organizer</h2>
+                <div class="image-block">
+                    <div style="padding-top: 6%; flex:8 ">
+                        <img src="img/content/mit-1.jpg" />
+
+                    </div>
+                    <div style="flex:4">
+                        <img src="img/content/mit-3.jpg" >
+                    </div>
+                </div>
+
+                <p>The Massachusetts Institute of Technology Global Startup Workshop (MITGSW)  is the world’s premier workshop dedicated to fostering entrepreneurship.<br> I helped organize this event in collaboration with MIT students and KGS Advisors. My responsibilities included designing all the creatives and developing the website alongwith handling the Elevator pitch competition on ground. I also helped in event management by dealing directly with the sponsors and MIT people pre-event.<br>
+                    It was a great learning experience and making friends with MIT graduates added to it. Also, I got an opportunity to increase our network meeting both novice and expert tech entrepreneurs with wide experience in the corporate.
+                </p>
+                <hr class="hr-center">
+
+              
+
+               
+        
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            
+            <div data-id="28" >
+                <h1>Mythri - Annual Sports meet in college</h1>
+                <h2>Runner Up - Team event (Badminton)</h2>
+                <br>
+                <div class="image-block" style="align-items:center;">
+                    <div style="flex:7 ">
+                        <img src="img/content/mythri.jpg" />
+
+                    </div>
+                    <div style="flex:8">
+                       <p>Mythri is the Annual Sports meet in JSS Academy of Technical Education, Noida. I stood second in the team event of Badminton.</p>
+
+                        <hr class="hr-center">
+                    </div>
+                </div>
+
+              
+
+              
+
+               
+        
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        
+        
+        
         </div>
 
 </div>
 
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+            <div data-id="29">
+                <h1>IIM Ranchi's fest website - Nirvaadh</h1>
+                <h2>Design &amp; Developement</h2>
+                <a href="http://www.iimsamarpan.com" target="_blank">www.iimsamarpan.com</a>
+                <div class="image-block">
+                    <div style=" ">
+                        <img src="img/content/iim.jpg" />
+                    </div>
+                </div>
+
+                <p>IIM Ranchi's Samarapn is a Corporate Social Responsibility club. <br> I designed and developed the website for their annual techno-management fest Nirvaadh.</p>
+                <hr class="hr-center">               
+                </div>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+            <div data-id="29">
+                <h1>Glam 21</h1>
+                <h2>Product Photography</h2>
+                <div class="image-block" style="align-items:center;">
+                    <div style=" ">
+                        <img src="img/content/glam21-1.jpg" />
+                    </div>
+                    <div>
+                        <img src="img/content/glam21-2.jpg" />
+                    </div>
+                </div>
+
+                <p>Brand Identity and product photography for a cosmetic brand. </p>
+                <hr class="hr-center">               
+                </div>
+            </div>
 
 
         <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
@@ -512,6 +746,7 @@
         </script>
 
 
+<!--
 
         <script>
             $('document').ready(function () {
@@ -524,6 +759,8 @@
                 });
             });
         </script>
+        
+-->
 
     </body>
 </html>

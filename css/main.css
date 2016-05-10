@@ -9,12 +9,15 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,300,600);
 
 html {
     color: #222;
     font-size: 1em;
-    line-height: 1.4;
+    line-height: 1.5;
     height: 100%;
+    font-family: 'Catamaran', sans-serif;
+    letter-spacing: .3px;
 }
 
 /*
@@ -101,7 +104,9 @@ a{
     color: inherit;
 }
 
-
+.landing-page{
+    height: calc(100vh - 40px);
+}
 
 
 .zero-opacity{
@@ -110,24 +115,30 @@ a{
 
 .container{
     display: flex;
-    height: 95vh;
+    height: 94.5vh;
 }
 
 .timeline{
     height: auto;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
 }
 
 .content{
     padding: 2%;
-    overflow-y: auto;
     height: auto;
     display: none
+}
+
+.content img{
+    width: 100%;
 }
 
 .date{
     align-self: flex-end;
     flex: 1;
     flex-basis: 15%;
+    color: #7c7c7c;
 }
 
 
@@ -140,11 +151,12 @@ a{
 .date p{
     text-align: right;
     margin-bottom: 0;
-    font-size: .72em;
+    font-size: .75em;
 }
 
 .month{
     font-size: 1.5em;
+        color: #464646;
 }
 
 @media screen and (min-width: 960px){
@@ -152,11 +164,14 @@ a{
     .timeline{
         overflow-y: auto;
         flex: 4;
+        flex: 6;
     }
 
     .content{
         flex: 3;
-        display: block
+        flex: 11;
+        display: block;
+        padding: 2% 7%;
     }
 
     .date{
@@ -167,8 +182,23 @@ a{
 
 .timeline-block{
     display: flex;
-    margin-bottom: 3%;
+    margin-bottom: 0;
     cursor: pointer;
+    border-bottom: 1px solid white;
+/*    border-top: 1px solid white;*/
+    padding-bottom: 1%;
+    transition: ease .15s;
+    width: 100%;
+}
+
+.timeline-block:hover{
+    border-bottom: 1px solid #c1c1c1;
+/*    border-top: 1px solid #c1c1c1;*/
+    transition: ease .15s;
+}
+
+.block-margin{
+    margin-top: 2.4em;
 }
 
 .timeline-block:hover{
@@ -179,20 +209,24 @@ a{
 .timeline-detail h1{
     margin-bottom: 0;
     font-weight: 500;
-    font-size: 1.7em;
+    font-size: 1.5em;
+    letter-spacing: .5px;
+    color: #222;
 }
 
 .timeline-detail p{
     margin: 0;
+    color: #4a4a4a;
 }
 
 .timeline-detail img{
-    width: 100%;
-    margin-top: 6%;
+    width: 95%;
+    margin-top: 2%;
 }
 
 .content h1{
     text-align: center;
+    margin-bottom: 0;
 }
 
 .content p{
@@ -201,6 +235,28 @@ a{
     font-size: .95em;
 }
 
+.content h2{
+    text-align: center;
+    font-weight: 300;
+    font-style: italic;
+    margin-top: 0;
+}
+.image-block{
+    display: flex;
+}
+
+.image-block>div{
+    margin: 0 2%;    
+}
+
+.image-block>div>p{
+    font-style: italic;
+}
+
+.hr-center{
+    width: 70%;
+    margin: 3% auto;
+    }
 /*...................navigation starts...............*/
 
 .navigation{
@@ -210,6 +266,8 @@ a{
 
 .right-nav-container{
     flex: 1;
+    position: fixed;
+    right: 0;
 }
 
 .right-nav-container ul{
@@ -271,7 +329,9 @@ a{
 }
 
 
-
+.centered{
+    text-align: center !important;
+}
 
 
 
