@@ -99,6 +99,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+body{
+    overflow: hidden;
+}
+
 a{
     text-decoration: none;
     color: inherit;
@@ -114,7 +118,7 @@ a{
 }
 
 .container{
-    display: flex;
+/*    display: flex;*/
     height: 94.5vh;
 }
 
@@ -164,7 +168,17 @@ a{
     .timeline{
         overflow-y: auto;
         flex: 4;
-        flex: 6;
+        flex: 6;    
+        
+        
+        height: auto;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+        position: absolute;
+        left: 0;
+        width: 30%;
+        overflow-y: scroll;
+        max-height: 90vh;
     }
 
     .content{
@@ -172,6 +186,13 @@ a{
         flex: 11;
         display: block;
         padding: 2% 7%;
+        
+        height: auto;
+        width: 60%;
+        float: right;
+        overflow-y: scroll;
+        max-height: 90vh;
+        
     }
 
     .date{
