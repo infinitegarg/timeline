@@ -176,6 +176,9 @@ a{
     padding-top: .5%;
 }
 
+.logo-typo{
+}
+
 .logo{
     flex: 1;
     box-sizing: border-box;
@@ -189,12 +192,13 @@ a{
 
 .infinite-logo{
     position: absolute;
-    top: 0;
+    top: 30%;
+    width: 80% !important;
+    margin: auto;
+    opacity: .15;
 }
 
-.infinite-logo {
-    
-}
+
 
 .pic{
     flex: 1;
