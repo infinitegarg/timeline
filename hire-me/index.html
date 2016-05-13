@@ -95,7 +95,7 @@
               $.ajax({
                 url: "https://formspree.io/infinitegarg@gmail.com",
                 method: "POST",
-                data: {message: "hello!"},
+                data: $('form').serialize(),
                 dataType: "json"
               })
               .done(function(response) {
