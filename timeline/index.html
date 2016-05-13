@@ -1460,7 +1460,9 @@
                 $('img').unveil();
                 $('.timeline-block' ).click(function(){
                     var id = $(this).data('id');
+
                     $('.js-details').addClass('content-mobile');
+
                     $('.js-details div').removeClass('is-active');
                     $('.js-details div[data-id="'+id+'"]').addClass('is-active');
                     $('.js-details div[data-id="'+id+'"] img').trigger("unveil");
