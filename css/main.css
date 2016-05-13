@@ -283,6 +283,16 @@ a{
     padding: 2% 5%;
 }
 
+@media (max-width:960px){
+.content-mobile{
+    display: block;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    overflow-y: auto;
+}
+}
+
 .content img{
     width: 100%;
 }
