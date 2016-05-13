@@ -499,7 +499,7 @@
     </div>
 
         <div class="content js-details scroll-design" id="content-details">
-
+        <a class="js-close">X</a>
         <div data-id="41" class="is-active">
          <h1>Zealicon 2016</h1>
          <h2>Festival Secretary</h2>
@@ -1460,10 +1460,16 @@
                 $('img').unveil();
                 $('.timeline-block' ).click(function(){
                     var id = $(this).data('id');
+                    $('.js-details').addClass('content-mobile');
                     $('.js-details div').removeClass('is-active');
                     $('.js-details div[data-id="'+id+'"]').addClass('is-active');
                     $('.js-details div[data-id="'+id+'"] img').trigger("unveil");
                 });
+
+                $('.js-close').click(function(evt) {
+                    evt.preventDefault();
+                    $('.js-details').removeClass('content-mobile');
+                })
             });
         </script>
 
