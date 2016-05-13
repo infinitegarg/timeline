@@ -137,7 +137,7 @@ a{
 }
 
 .expertise h1{
-    margin: 0;   
+    margin: 0;
     font-weight: 400;
     letter-spacing: 2px;
     font-size: 3.5em;
@@ -145,7 +145,7 @@ a{
 
 
 .expertise-2 h1{
-    margin: 0;   
+    margin: 0;
     font-weight: 400;
     font-size: 1.8em;
 }
@@ -193,7 +193,7 @@ a{
 }
 
 .infinite-logo {
-    
+
 }
 
 .pic{
@@ -226,7 +226,7 @@ a{
     font-weight: 300;
     color: #4f4f4f;
     display: block;
-    
+
 }
 
 .explore-content a:before {
@@ -294,6 +294,14 @@ a{
     font-size: .8em;
 }
 
+#content-details > div {
+    display: none;
+}
+
+#content-details > div.is-active{
+    display: block;
+}
+
 .date p{
     text-align: right;
     margin-bottom: 0;
@@ -310,9 +318,9 @@ a{
     .timeline{
         overflow-y: auto;
         flex: 4;
-        flex: 6;   
-        
-        
+        flex: 6;
+
+
         height: auto;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
@@ -339,13 +347,13 @@ a{
         float: right;
         overflow-y: scroll;
         max-height: 90vh;
-        
+
     }
 
     .date{
         flex-basis: none;
     }
-    
+
 }
 
 .timeline-block{
@@ -427,7 +435,7 @@ a{
 }
 
 .image-block>div{
-    margin: 0 2%;    
+    margin: 0 2%;
 }
 
 .image-block>div>p{
