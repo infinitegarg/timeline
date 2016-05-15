@@ -7,8 +7,27 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-        <!-- Place favicon.ico in the root directory -->
+        <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+        <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/favicon-194x194.png" sizes="194x194">
+        <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/android-chrome-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+        <link rel="manifest" href="/manifest.json">
+        <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="apple-mobile-web-app-title" content="InfiniteGarg">
+        <meta name="application-name" content="InfiniteGarg">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="msapplication-TileImage" content="/mstile-144x144.png">
+        <meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
@@ -28,14 +47,14 @@
            <div class="right-nav-container nav-container">
                <ul class="filter-options">
                    <a  href="timeline/">Timeline</a>
-                   <a  href="#">Me</a>
-                   <a  href="#">Resume</a>
-                   <a  href="#">Hire Me!</a>
+                   <a  href="skills/">Me</a>
+                   <a  href="resume_anant_garg.pdf" target="_blank">Resume</a>
+                   <a  href="hire-me/">Hire Me!</a>
                </ul>
            </div>    
         </div>
         
-        <div class="landing-content">
+       <div class="landing-content" id="landing-content-home">
 
             <div class="expertise">
                 <h1>UI/UX</h1>
@@ -47,7 +66,7 @@
                 <img class="infinite-logo" src="img/logo.svg">
             </div>
             <div class="pic">
-                <img src="img/content/infinite.png">
+                <img class="anant-pic" src="img/content/infinite.png">
             </div>
             
         </div>
@@ -59,9 +78,41 @@
                <h3>Management</h3>  
            </div>
            <div class="timeline-link">
+              <div>
                <a href="timeline/">Explore My work here ! <br> The Timeline</a>
-           </div>
+                </div>
+            </div>
            <div style="flex:1"></div>
+        </div>
+        
+        <div class="social">
+            <div></div>
+            <div class="social-links">
+                <p>Find me anywhere at 
+                    <strong>/infinitegarg</strong></p>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="linkedin" src="img/icons/linkedin.svg">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="twitter" src="img/icons/twitter.svg">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="github" src="img/icons/git.svg">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="behance" src="img/icons/be.svg">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="angel" src="img/icons/angel.svg">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="youtube" src="img/icons/youtube.svg">
+                </a>
+                <a href="" target="_blank" rel="noopener noreferrer">
+                    <img alt="facebook" src="img/icons/fb.svg">
+                </a>
+            </div>
+            <div></div>
         </div>
         
         
@@ -88,21 +139,6 @@
         </script>
 
 
-<!--
-
-        <script>
-            $('document').ready(function () {
-                $('img').unveil();
-                $('.timeline-block' ).click(function(){
-                    var id = $(this).data('id');
-                    $('.js-details div').hide();
-                    $('.js-details div[data-id="'+id+'"]').show();
-                    $('window').trigger("lookup");
-                });
-            });
-        </script>
-        
--->
 
     </body>
 </html>

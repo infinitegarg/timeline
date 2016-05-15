@@ -104,7 +104,7 @@ textarea {
    ========================================================================== */
 
 body{
-    overflow: hidden;
+/*    overflow: hidden;*/
 }
 
 a{
@@ -113,77 +113,97 @@ a{
 }
 
 .landing-page{
+    display: flex;
+    flex-direction: column;  min-height: 100vh;
 }
 
 .landing-content{
     background: #fafafa;
     display: flex;
-    height: 100%;
+    flex-direction: column;
+    height: 100%;    
+    height: 80vh;
 /*    align-items: center;*/
 }
 
 .expertise, .expertise-2{
-    flex: 1;
+/*    flex: 1;*/
     font-family: 'book', serif;
     color: #7e7e7e;
-    align-self: flex-end;
-    padding-left: 1.5%;
     box-sizing: border-box;
     text-transform: uppercase;
 }
 
+.expertise-2{
+}
+
 .expertise{
     padding-bottom: .5%;
+    order: 2;
 }
 
 .expertise h1{
     margin: 0;
     font-weight: 400;
     letter-spacing: 2px;
-    font-size: 3.5em;
+    font-size: 1.75em;
+    margin-left: 3%;
 }
 
 
 .expertise-2 h1{
     margin: 0;
     font-weight: 400;
-    font-size: 1.8em;
+    font-size: 1.1em;
+    margin-left: 3%;
 }
 
 .expertise h2{
     margin: -1.3% 0 0;
     font-weight: 400;
-    font-size: 1.5em;
+    font-size: 1.1em;
+    margin-left: 3%;
 }
 .expertise-2 h2{
     margin: -1% 0 0;
     font-weight: 400;
-    font-size: 1.4em;
+    font-size: .9em;
+    margin-left: 3%;
 }
 .expertise h3{
     margin: -.5% 0 0;
     font-weight: 400;
-    font-size: 1em;
+    font-size: .85em;
+    margin-left: 3%;
 }
 
  .expertise-2 h3{
     margin: -.5% 0 0;
     font-weight: 400;
-    font-size: 1em;
+     font-size: .85em;
+     margin-left: 3%;
 }
 
 .expertise-2{
     padding-top: .5%;
 }
 
-.logo-typo{
+
+.pic img{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    height: 120%;
+    opacity: .15;
+    transition: 1s ease;
 }
+
 
 .logo{
     flex: 1;
     box-sizing: border-box;
-    padding: 4%;
-    background-repeat: no-repeat;
+/*    padding: 15% 5% 20%;*/
+    padding: 25% 5% 20%;
     position: relative;
 }
 .logo img{
@@ -192,36 +212,173 @@ a{
 
 .infinite-logo{
     position: absolute;
-    top: 30%;
+    top: 53%;
     width: 80% !important;
-    margin: auto;
+    left: 10%;
     opacity: .15;
 }
+
+.explore-content{
+    position: relative;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+}
+
+
+.technical{
+    flex: 9;
+    display: flex;
+    flex-direction: column;
+}
+
+.skillset{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 3;
+    align-items: flex-end;
+    padding: 0 10% 1%;
+    box-sizing: border-box;
+}
+
+.skillset div{
+    flex: 1;
+    transition: .8s ease;
+    flex-basis: 20%;
+    flex-wrap: wrap;
+    margin-top: 3%;
+}
+.skillset div:hover{
+    transform: translate(0, -5px);
+}
+
+
+.pic{
+    flex: 2;
+    align-content: flex-end;
+}
+
+@media screen and (min-width:525px) and (max-width:960px){
+    .logo{
+        padding: 5% 20%;
+    }
+    .infinite-logo{
+        top: 30%;
+        width: 50% !important;
+        left: 25%;
+    }
+    
+}
+
+
+@media screen and (min-width: 960px){
+
+
+    .expertise, .expertise-2{
+        flex: 1;
+    }
+
+    .pic{
+        flex: 1;
+    }
+    
+    .skill-wrapper{
+        height:94vh;
+    }
+    
+    .skillset div{
+        flex-basis: auto;
+    }
+    .technical{
+        flex-direction: row;
+    }
+
+    
+    .explore-content{
+        flex-direction: row;
+    }
+    
+    .expertise{
+        align-self: flex-end;
+    }
+
+    .expertise h1{
+        letter-spacing: 2px;
+        font-size: 3.2em;
+        margin-left: 3%;
+    }
+
+
+    .expertise-2 h1{
+        font-size: 1.6em;
+        margin-left: 3%;
+    }
+
+    .expertise h2{
+        margin: -1.6% 0 0;
+        font-size: 1.4em;
+        margin-left: 3%;
+    }
+    .expertise-2 h2{
+        margin: -1% 0 0;
+        font-size: 1.4em;
+        margin-left: 3%;
+    }
+    .expertise h3{
+        margin: -.5% 0 0;
+        font-size: 1em;
+        margin-left: 3%;
+    }
+
+    .expertise-2 h3{
+        margin: -.5% 0 0;
+        font-size: 1em;
+        margin-left: 3%;
+    }
+
+    
+    .landing-content{
+        flex-direction: row;
+    }  
+    #landing-content-home{
+        height: auto;
+    }
+
+
+    .pic img{
+        height: 75%;
+        opacity: 1;
+    }
+
+    .expertise{
+        order: 0;
+    }
+
+    .logo{
+        padding: 4%;
+    }
+    .infinite-logo{
+        top:33%;
+    }
+    
+}
+
+.logo-typo{
+}
+
+
 
 .infinite-logo {
 
 }
 
 
-.pic{
-    flex: 1;
-    align-content: flex-end;
-}
-
-.pic img{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 75%;
-}
-
-.explore-content{
-    position: relative;
-    display: flex;
-}
-
 .timeline-link{
     flex: 1;
+}
+.timeline-link > div{
     position: relative;
 }
 
@@ -241,7 +398,7 @@ a{
     position: absolute;
     width: 50%;
     height: 1.3px;
-    bottom: 5px;
+    bottom: -5px;
     left: 25%;
     background-color: #aeaeae;
     visibility: hidden;
@@ -283,14 +440,70 @@ a{
     padding: 2% 5%;
 }
 
-@media (max-width:960px){
-.content-mobile{
-    display: block;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    overflow-y: auto;
+
+
+.social > div{
+    flex: 1;
 }
+
+
+.skill-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.skill-heading h1{
+    text-align: center;
+    font-weight: 300;
+    color: #4f4f4f;
+    margin-top: 2%;
+}
+
+@media (max-width:960px){
+    
+    .skill-heading h1{
+        padding: 0 10%;
+        font-size: 1.2em;
+        margin-top: 6%;
+    }
+
+    .skill-wrapper{
+        height: 100%;
+    }
+    
+    .pic img{
+        top: 0;
+    }
+    
+    .hide-mobile{
+        display: none;
+    }
+  
+   
+    .content-mobile
+    {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        overflow-y: auto;
+        height: 100%;
+    }
+   
+    .content-mobile > div
+    {
+/*        border: 1px solid #535353;*/
+/*        padding: 5%;*/
+    }
+    
+    .social-links{
+        flex: 12 !important;
+    }
+    .timeline-link{
+        margin-top: 4%;
+    }
+    
 }
 
 .content img{
@@ -330,14 +543,37 @@ a{
         color: #464646;
 }
 
+.tech-1{
+    background: white;
+    margin: 5%;
+    padding: 2% 5%;
+    box-sizing: border-box;
+    border: #ebebeb solid 1px;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.js-close{
+    float: right;
+    padding: 2%;
+}
+
 @media screen and (min-width: 960px){
+
+    .js-close{
+        display: none;
+    }
+    .tech-1{
+        margin: 2% 1%;
+        padding: 2%;
+    }
 
     .timeline{
         overflow-y: auto;
         flex: 4;
         flex: 6;
-
-
         height: auto;
         padding-top: 1.5%;
         padding-bottom: 1.5%;
@@ -463,6 +699,111 @@ a{
     width: 70%;
     margin: 3% auto;
     }
+
+.social{
+    display: flex;
+}
+
+
+.social-links{
+    text-align: center;
+    padding-bottom: 1.5%;
+}
+
+.social-links a{
+    margin: .65%;
+    opacity: .4;
+    transition: .8s ease;
+    display: inline-block;
+}
+.social-links a:hover{
+    opacity: .8;
+    transform: translate(0, -5px);
+}
+
+.social-links a img{
+    width: 35px
+}
+
+.social-links p{
+    margin-bottom: .5em;
+}
+
+
+.skill-heading{
+    flex: 2;
+}
+
+
+
+.technical >div{
+    flex: 1;
+}
+
+
+.skillset div img{
+    width: 80%;
+    opacity: .7;
+}
+
+.msg-form{
+    transition: .3s ease;
+}
+
+.msg-form form{
+    margin-top: 5%;
+}
+
+
+.msg-form div{
+     width: 100%;   
+}
+
+.msg-form input{
+    outline: none ;
+    border: none;
+    border-bottom: #adadad 1px solid;
+    margin-left: 3%;
+    width: 80%;
+}
+
+textarea{
+    width: 70%;
+}
+.msg-form input[type="submit"]{
+    width: 75%;
+    margin: auto;
+    display: block;
+    background: #efefef;
+    padding: 2% 0;
+    transition: .5s ease;
+    border: none;
+    
+}
+.msg-form input[type="submit"]:hover{
+    width: 85%;
+    
+}
+
+.msg-form textarea{
+    outline: none;
+    border: none;
+    border-bottom: #adadad 1px solid;
+    margin-left: 3%
+}
+.js-response{
+    color: #034e84;
+    font-style: italic;
+    margin-top: 6%;
+    text-align: center;
+    transition: 1s ease;
+}
+
+.footer-tagline{
+    text-align: center;
+    font-style: italic;
+}
+
 /*...................navigation starts...............*/
 
 .navigation{
@@ -470,22 +811,58 @@ a{
     font-family: serif;
 }
 
+.nav-container{
+    overflow-x: auto;
+}
+
 .right-nav-container{
-    flex: 1;
+    flex: 1; 
+    -webkit-box-shadow: -9px 0px 8px -8px rgba(107,107,107,0.35);
+    -moz-box-shadow: -9px 0px 8px -8px rgba(107,107,107,0.35);
+    box-shadow: -2px 0px 2px -1px rgba(107,107,107,0.35);
+    border-left: #ccc solid 1px;
 }
 
 .right-nav-container ul{
-    justify-content: flex-end;
 }
 
 .left-nav-container{
-    flex: 1;
+    flex: 2; 
 }
+
+.left-nav-container ul{
+    padding-left: 2px;
+}
+
+.active{
+    background:rgb(229, 229, 229)
+}
+
+@media screen and (min-width: 960px){
+    .right-nav-container{
+        flex: 1;
+        box-shadow: none;
+        border-left: none;
+           }
+
+    .right-nav-container ul{
+        justify-content: flex-end;
+    }
+    .left-nav-container{
+        flex: 1; 
+    }
+    .left-nav-container ul{
+        padding-left: 3%;
+    }
+    
+}
+
 .nav-container ul{
     display: flex;
     background: #fff;
     border-bottom: #e6e6e6 solid 1px;
     margin:0;
+    overflow-y: auto;
 }
 
 .nav-container li{
@@ -497,23 +874,26 @@ a{
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 1.5px;
-    padding:  .8em;
+    padding: .8em;
     color: #393939;
     display: flex;
     justify-content: center;
+    flex-shrink: 0;
 }
 .nav-container a:hover{
     background: #fafafa;
 }
 
-@media (min-width:960px){
-
-
+.nav-container a:active, .nav-container a:focus{
+background:rgb(229, 229, 229);
 }
+
+
 
 /*...................navigation ends...............*/
 
 
+@media (min-width:960px){
 .scroll-design::-webkit-scrollbar-track
 {
     background-color: #F5F5F5;
@@ -532,7 +912,7 @@ a{
     border-top-right-radius: 10px;
 }
 
-
+}
 .centered{
     text-align: center !important;
 }
