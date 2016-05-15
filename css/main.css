@@ -560,8 +560,15 @@ a{
     padding: 2%;
 }
 
+.click{
+    color: #034e84 !important;
+}
+
 @media screen and (min-width: 960px){
 
+    .click{
+        display: none;
+    }
     .js-close{
         display: none;
     }
