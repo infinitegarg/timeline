@@ -7,27 +7,29 @@
 <![CDATA[
 	.st0{fill-rule:evenodd;clip-rule:evenodd;fill:#7D7D7D;}
 
-@-webkit-keyframes AnimationName {
-    0%{transform: scale(1)}
-    50%{transform: scale(.8)}
-    0%{transform: scale(1)}
+@-webkit-keyframes gradient {
+    0%{fill:#5c5c5c; transform: scale(1)}
+    50%{fill:#e2e2e2; transform: scale(.85)}
+    100%{fill:#5c5c5c;transform: scale(1)}
 }
-@-moz-keyframes AnimationName {
-    0%{transform: scale(1)}
-    50%{transform: scale(.8)}
-    0%{transform: scale(1)}
+@-moz-keyframes gradient { 
+    0%{fill:#5c5c5c; transform: scale(1)}
+    50%{fill:#e2e2e2; transform: scale(.85)}
+    100%{fill:#5c5c5c;transform: scale(1)}
 }
-@keyframes AnimationName { 
-    0%{transform: scale(1)}
-    50%{transform: scale(.8)}
-    0%{transform: scale(1)}
+@keyframes gradient {  
+    0%{fill:#5c5c5c; transform: scale(1)}
+    50%{fill:#e2e2e2; transform: scale(.85)}
+    100%{fill:#5c5c5c;transform: scale(1)}
 }
 
 .st0{
-    -webkit-animation: AnimationName 3s ease infinite;
--moz-animation: AnimationName 3s ease infinite;
-animation: AnimationName 3s ease infinite;
+
+-webkit-animation: gradient 3s ease infinite;
+-moz-animation: gradient 3s ease infinite;
+animation: gradient 3s ease infinite;
 }
+
 
 
 ]]>
