@@ -473,6 +473,7 @@ a{
     
     .pic img{
         top: 0;
+        z-index: 1;
     }
     
     .hide-mobile{
@@ -809,6 +810,7 @@ textarea{
 .navigation{
     display: flex;
     font-family: serif;
+    z-index: 10;
 }
 
 .nav-container{
