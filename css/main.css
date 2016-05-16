@@ -925,14 +925,7 @@ background:rgb(229, 229, 229);
     text-align: center !important;
 }
 
-img{
-    max-width: 100%;
-    min-width: 48px;
-    min-height: 48px;
-    background-position:center;
-    background-repeat: no-repeat;
-    background-image: url(../img/loader.svg); 
-}
+
 
 
 /* ==========================================================================
