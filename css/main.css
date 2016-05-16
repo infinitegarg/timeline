@@ -688,6 +688,11 @@ a{
 .content div a{
     display: block;
     text-align: center;
+    color: #0092fc;
+    transition: .5s ease;
+}
+.content div a:hover{
+    color: #004476;
 }
 
 .image-block{
